@@ -33,12 +33,11 @@
         margin: 20px 20px;
     }
     #msg {
-        background-color: black;
         color: #fff;
         padding: 15px;
-        font-size: 22px;
+        font-size: 20px;
         border-radius: 10px;
-        width: 150px;
+        width: 250px;
         text-align: center;
     }
 }
@@ -65,7 +64,7 @@
         padding: 15px;
         font-size: 24px;
         border-radius: 10px;
-        width: 220px;
+        width: 240px;
         text-align: center;
     }
 }

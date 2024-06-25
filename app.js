@@ -8,18 +8,18 @@ let userScorePara=document.querySelector("#user-score")
 let compScorePara=document.querySelector("#comp-score")
 
 // showWinner logic
-const showWinner = (userWin) => {
+const showWinner = (userWin,userChoice,compChoice) => {
     if (userWin) {
         userScore++;
         userScorePara.innerText=userScore;
         console.log("you win")
-        msg.innerText = "Yea! You win"
+        msg.innerText = `Yea win!! ${userChoice} win over ${compChoice} `
         msg.style.backgroundColor = "green"
     } else {
         compScore++;
         compScorePara.innerText=compScore;
         console.log("you loose")
-        msg.innerText = "ahha! You loose"
+        msg.innerText = `Ahha loose!! ${userChoice} defeat against ${compChoice}`
         msg.style.backgroundColor = "red"
     }
 }
@@ -61,7 +61,7 @@ playGame = (userChoice) => {
             // compChoice=stone,paper
             userWin = compChoice === "paper" ? true : false;
         }
-        showWinner(userWin);
+        showWinner(userWin,userChoice,compChoice);
     }
 }
 // step-1(add eventListner to every box)
